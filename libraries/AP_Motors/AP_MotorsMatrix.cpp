@@ -1044,14 +1044,14 @@ bool AP_MotorsMatrix::setup_octaquad_matrix(motor_frame_type frame_type) {
   case MOTOR_FRAME_TYPE_X: {
     _frame_type_string = "X";
     static const AP_MotorsMatrix::MotorDef motors[]{
-        {45, AP_MOTORS_MATRIX_YAW_FACTOR_CCW, 1},
-        {-45, AP_MOTORS_MATRIX_YAW_FACTOR_CW, 7},
-        {-135, AP_MOTORS_MATRIX_YAW_FACTOR_CCW, 5},
-        {135, AP_MOTORS_MATRIX_YAW_FACTOR_CW, 3},
-        {-45, AP_MOTORS_MATRIX_YAW_FACTOR_CW, 8},
-        {45, AP_MOTORS_MATRIX_YAW_FACTOR_CCW, 2},
-        {135, AP_MOTORS_MATRIX_YAW_FACTOR_CW, 4},
-        {-135, AP_MOTORS_MATRIX_YAW_FACTOR_CCW, 6},
+        {-45, AP_MOTORS_MATRIX_YAW_FACTOR_CCW, 1},
+        {45, AP_MOTORS_MATRIX_YAW_FACTOR_CW, 7},
+        {135, AP_MOTORS_MATRIX_YAW_FACTOR_CCW, 5},
+        {-135, AP_MOTORS_MATRIX_YAW_FACTOR_CW, 3},
+        {45, AP_MOTORS_MATRIX_YAW_FACTOR_CW, 8},
+        {-45, AP_MOTORS_MATRIX_YAW_FACTOR_CCW, 2},
+        {-135, AP_MOTORS_MATRIX_YAW_FACTOR_CW, 4},
+        {135, AP_MOTORS_MATRIX_YAW_FACTOR_CCW, 6},
     };
     add_motors(motors, ARRAY_SIZE(motors));
     break;
